@@ -1,5 +1,5 @@
-import { verifyJwt } from "@/app/lib/jwt";
-import prisma from "@/app/lib/prisma";
+import { verifyJwt } from "@/lib/jwt";
+import prisma from "@/lib/prisma";
 import { useSession } from "next-auth/react";
 import { NextRequest, NextResponse } from "next/server";
 
