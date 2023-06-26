@@ -1,7 +1,7 @@
-import prisma from "@/app/lib/prisma";
+import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 import * as bcrypt from "bcrypt";
-import { signJwtAccessToken } from "@/app/lib/jwt";
+import { signJwtAccessToken } from "@/lib/jwt";
 
 interface LoginBody {
   username: string;

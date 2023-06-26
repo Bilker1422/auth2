@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { UserCreate } from "@/models/user";
 import * as bcrypt from "bcrypt";
-import prisma from "@/app/lib/prisma";
+import prisma from "@/lib/prisma";
 
 export async function POST(req: NextRequest) {
   const body: UserCreate = await req.json();
